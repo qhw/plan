@@ -1,0 +1,9 @@
+操作系统 linux
+语言：python
+库：python框架 flask
+数据库：mysql mysqldb
+orm：sqlalchemy
+
+目标：一个记录自己心情或者计划的小网站
+目的：熟悉python的orm：sqlalchemy以及flask
+

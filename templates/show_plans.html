@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block body %}
+  <ul class=entries>
+  {% for entry in entries %}
+  <li>
+		<p>{{ entry['plan'] }}</p>
+		<p>{{ entry['posttime'] }}</p>
+  {% else %}
+    <em>Unbelievable.  No entries here so far</em>
+	</li>
+  {% endfor %}
+  </ul>
+  <form action = "{{url_for('add_plan')}}" method="POST">
+	<p>计划:<textarea cols=40 rows=3 name=content></textarea></p>
+	<input type="submit" value="添加">
+  </form>
+{% endblock %}
+

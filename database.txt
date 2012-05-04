@@ -1,0 +1,20 @@
+CREATE TABLE IF NOT EXISTS user(
+		id 					int 					NOT NULL AUTO_INCREMENT PRIMARY_KEY,
+		username		varchar(50),
+		passwd			varchar(50),
+		createtime	datetime
+		)
+
+
+CREATE TABLE IF NOT EXISTS plan(
+		id					int						NOT NULL AUTO_INCREMENT PRIMARY_KEY,
+		userid			int,
+		content			varchar(140),
+		posttime		DateTime
+		)
+
+CREATE TABLE IF NOT EXISTS follower(
+		id					int						NOT NULL AUTO_INCREMENT	PRIMARY_KEY,
+		userid			int,
+		followers		varchar(50)
+		)
